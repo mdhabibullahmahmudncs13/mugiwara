@@ -87,8 +87,13 @@
 </head>
 <body>
     <header>
-        <h1>DIG THE DATA 3.0</h1>
-        <p>Wait few seconds</p>
+        <h1>DIG THE DATA 3.0</h1>   
+        <p id="wait-message">Wait few seconds....</p>
+        <script>
+            setTimeout(function() {
+            document.getElementById('wait-message').style.display = 'none';
+            }, 3000);
+        </script>
     </header>
     <section id="registration" class="green-section">
         <div class="registration-form">
