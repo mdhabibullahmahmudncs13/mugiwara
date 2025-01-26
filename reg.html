@@ -16,7 +16,7 @@
         }
         header {
             color: white;
-            padding: 20px; /* Adjusted padding to make the header height smaller */
+            padding: 20px;
             text-align: center;
             position: relative;
         }
@@ -54,6 +54,35 @@
             text-align: center;
             height: 100%;
         }
+        iframe {
+            width: 100%;
+            height: 878px;
+            border: none;
+        }
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5em;
+            }
+            .register-button {
+                font-size: 1em;
+                padding: 10px 2%;
+            }
+            iframe {
+                height: 700px;
+            }
+        }
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 2em;
+            }
+            .register-button {
+                font-size: 0.9em;
+                padding: 8px 2%;
+            }
+            iframe {
+                height: 600px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -63,7 +92,7 @@
     <section id="registration" class="green-section">
         <div class="registration-form">
             <h2>Register Now</h2>
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfnVTKLNfUCtbHjVRuF1uwNHX2425DEqnI7EA1grZU4lA4gSw/viewform?embedded=true" width="640" height="878" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfnVTKLNfUCtbHjVRuF1uwNHX2425DEqnI7EA1grZU4lA4gSw/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
         </div>
     </section>
 </body>
